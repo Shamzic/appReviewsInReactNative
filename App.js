@@ -5,15 +5,15 @@ import * as Font  from 'expo-font'
 import { AppLoading } from 'expo';
 
 const getFonts = () => Font.loadAsync({
-  'munito-regular' : require('./assets/fonts/Nunito-Regular.ttf'),
-  'munito-bold' : require('./assets/fonts/Nunito-Bold.ttf'),
+  'nunito-regular' : require('./assets/fonts/Nunito-Regular.ttf'),
+  'nunito-bold' : require('./assets/fonts/Nunito-Bold.ttf')
 });
 
 export default function App() {
 
-  const [fontLoaded, setFontLoaded] = useState(false);
+  const [fontsLoaded, setFontsLoaded] = useState(false);
 
-  if(fontLoaded) {
+  if(fontsLoaded) {
     return (
       <Home/>
     );
@@ -21,7 +21,7 @@ export default function App() {
     return (
       <AppLoading
         startAsync={getFonts}
-        onFinish={() => setFontLoaded(true)}
+        onFinish={() => setFontsLoaded(true)}
       />
     )
   }
