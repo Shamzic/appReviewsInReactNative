@@ -2,12 +2,11 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import Home from '../screens/home'
-import ReviewDetails from '../screens/reviewDetails'
+import About from '../screens/about'
 
 const Stack = createStackNavigator()
 
-export default HomeStack = () => {
+export default AboutStack = () => {
   return (
     // <NavigationContainer initialRouteName='Home'>
       <Stack.Navigator
@@ -20,18 +19,11 @@ export default HomeStack = () => {
           headerTitleAlign: 'center'
         }}
       >
-        <Stack.Screen 
-          name='Home' 
-          component={Home} 
-          options={{ 
-            title: 'GameZone',
-          }}
-        />
         <Stack.Screen
-          name='ReviewDetails' 
-          component={ReviewDetails} 
-          options={{ title: 'ReviewDetails',
-          }}
+            name='About' 
+            component={About} 
+            options={{ title: 'About Gamezone',
+            }}
         />
       </Stack.Navigator>
     // </NavigationContainer>
