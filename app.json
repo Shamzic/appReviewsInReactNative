@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "appReviewsInReactNative",
+    "name": "appReviews",
+    "slug": "appReviews",
     "platforms": [
       "ios",
       "android",
