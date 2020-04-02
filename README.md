@@ -2,11 +2,15 @@
 
 ## Install dependancies
 
-`> sudo yarn install @react-navigation/stack`
+`> sudo yarn add @react-navigation/stack`
 
-`> sudo yarn install @react-navigation/native`
+`> sudo yarn add @react-navigation/native`
 
-`> sudo yarn install @react-navigation/drawer`
+`> sudo yarn add @react-navigation/drawer`
+
+`> sudo yarn add formik`
+
+`> sudo yarn add yup`
 
 `> expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view`
 
