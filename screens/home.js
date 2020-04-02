@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import { globalStyles } from '../styles/global'
+import Card from '../shared/card'
 
 export default function Home({navigation}) {
 
   const [reviews, setReviews] = useState([
-    {title : 'Zelda BOTW', rating : 5, body: 'lorem ipsum', key: '1'},
-    {title : 'Pokemon DJ mystère', rating : 4, body: 'lorem ipsum', key: '2'},
-    {title : 'Not so FF', rating : 6, body: 'lorem ipsum', key: '3'},
+    {title : 'Zelda BOTW', rating : 3, body: 'Jeu d\'aventure sur Nintendo Switch', key: '1'},
+    {title : 'Pokemon DJ mystère', rating : 4, body: 'Jeu d\'aventure sur Nintendo DS', key: '2'},
+    {title : 'Final Fantasy III', rating : 5, body: 'Jeu tour par tour sur Nintendo DS', key: '3'},
   ]);
 
   return (
@@ -18,8 +19,10 @@ export default function Home({navigation}) {
           <TouchableOpacity
             onPress={() => navigation.navigate('ReviewDetails', item)}
           >
-            <Text style={globalStyles.titleText}>{item.title}</Text>
-          </TouchableOpacity>   
+            <Card>
+              <Text style={globalStyles.titleText}>{item.title}</Text>
+              </Card>
+            </TouchableOpacity>   
         )}
       >
       </FlatList>
