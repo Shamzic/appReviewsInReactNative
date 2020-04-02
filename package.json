@@ -13,6 +13,7 @@
     "@react-navigation/native": "^5.1.4",
     "@react-navigation/stack": "^5.2.9",
     "expo": "~37.0.3",
+    "formik": "^2.1.4",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.0.tar.gz",
@@ -21,7 +22,8 @@
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.2.0",
     "react-native-web": "~0.11.7",
-    "react-navigation-drawer": "^2.4.10"
+    "react-navigation-drawer": "^2.4.10",
+    "yup": "^0.28.3"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
